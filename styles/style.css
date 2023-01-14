@@ -26,6 +26,12 @@ footer {
     border: none;
 }
 
+section,
+footer {
+    margin-top: 130px;
+    padding: 0 10px;
+}
+
 /*==============================
          Header style 
 ================================= */
@@ -69,7 +75,7 @@ nav ul li a {
 
 /* banner style  */
 .banner {
-    padding: 50px 12px 45px 12px;
+    padding: 50px 10px 45px 10px;
     text-align: center;
 }
 
@@ -101,8 +107,244 @@ nav ul li a {
     height: 700px;
 }
 
+/*==============================
+         feature style 
+================================= */
+.features {
+    margin-top: -45px;
+    padding: 0 73px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 73px;
+}
 
+.feature-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
 
+.feature-image img {
+    border-radius: 8px;
+    width: 342px;
+    height: 342px;
+}
+
+.feature-title {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 53px;
+    color: #727272;
+}
+
+.feature-title b {
+    color: #131313;
+    font-weight: 700;
+}
+
+.primary-text {
+    color: #FF900E;
+}
+
+.section-description {
+    margin: 24px 0 0 0;
+    line-height: 26px;
+    color: #727272;
+}
+
+/*==============================
+            about style 
+================================= */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 146px;
+}
+
+.about-title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #131313;
+    border-left: 5px solid #FF900E;
+    padding-left: 21px;
+}
+
+.experience {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 30px 40px 30px 30px;
+    margin-bottom: 20px;
+}
+
+.experience-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #131313;
+}
+
+.left-about .section-description {
+    margin-bottom: 30px;
+}
+
+.experience-description {
+    margin-top: 10px;
+    line-height: 26px;
+    color: #727272;
+}
+
+.right-about {
+    position: relative;
+}
+
+.experience-btn {
+    position: absolute;
+    left: -92px;
+    bottom: -75px;
+    padding: 45px;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 70px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.experience-btn p {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/*==============================
+         Facts style 
+================================= */
+.fact-title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #131313;
+}
+
+.facts .section-description {
+    width: 542px;
+}
+
+.fact {
+    padding: 100px 50px 50px 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 124px;
+    position: relative;
+}
+
+.fact-iteam {
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    /* transform: rotate(90deg); */
+    padding: 45px 30px 60px 30px;
+    text-align: center;
+}
+
+.fact-iteam {
+    position: relative;
+    top: 0%;
+    transition: .5s all ease;
+    animation: entry 1s linear 1;
+}
+
+.fact-iteam:hover {
+    cursor: pointer;
+    transform: rotate(0deg) scale(1.5) translateY(10px);
+    transition: .5s all ease;
+    z-index: 400;
+}
+
+@keyframes entry {
+    0% {
+        top: -20%;
+        opacity: 0.1;
+    }
+
+    100% {
+        top: 0%;
+    }
+}
+
+.fact-number {
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 53px;
+
+    color: #424242;
+}
+
+.fact-iteam-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #727272;
+}
+
+/*==============================
+        Our Sponspors style 
+================================= */
+.our-sponspors {
+    text-align: center;
+}
+
+.sponspor-title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #131313;
+    margin-bottom: 24px;
+}
+
+.our-sponspors .section-description {
+    width: 542px;
+    margin: 0 auto;
+}
+
+.sponspors {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 155px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.sponspor-img {
+    filter: grayscale(100%);
+}
+
+.sponspor-img:hover {
+    filter: grayscale(0);
+}
+
+/*==============================
+        Footer style 
+================================= */
+footer {
+    background: #FFF4E7;
+    border-radius: 8px;
+    text-align: center;
+    padding: 38px 0;
+}
+
+.footer-title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #424242;
+}
 
 
 
@@ -126,7 +368,8 @@ nav ul li a {
 @media only screen and (max-width: 576px) {
 
     .banner-img img,
-    .banner-info {
+    .banner-info,
+    .about-image img {
         width: 100%;
         height: 100%;
     }
@@ -144,4 +387,65 @@ nav ul li a {
         font-size: 44px;
         line-height: 60px;
     }
+
+    .features {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .feature-image {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .right-about {
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .experience-btn {
+        position: absolute;
+        left: 27px;
+        bottom: -95px;
+        padding: 45px;
+        font-weight: 700;
+        font-size: 65px;
+        line-height: 70px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .fact {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 35px;
+    }
+        .facts .section-description ,.our-sponspors .section-description{
+            width: 100%;
+        }
+    .fact-iteam:hover {
+        transform: rotate(0deg) scale(1.1) translateY(10px);
+        transition: .5s all ease;
+        z-index: 400;
+    }
+
+    .sponspors {
+        align-content: center;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        grid-column-gap: 50px;
+        grid-row-gap: 50px;
+
+    }
+
+    .sponspor-img {
+        width: 75%;
+    }
+
 }
