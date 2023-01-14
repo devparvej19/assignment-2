@@ -163,7 +163,8 @@ nav ul li a {
     gap: 146px;
 }
 
-.about-title {
+.about-title,
+.contact-title {
     font-weight: 700;
     font-size: 45px;
     line-height: 53px;
@@ -180,7 +181,8 @@ nav ul li a {
     margin-bottom: 20px;
 }
 
-.experience-title {
+.experience-title,
+.info-title {
     font-weight: 600;
     font-size: 20px;
     line-height: 23px;
@@ -191,7 +193,8 @@ nav ul li a {
     margin-bottom: 30px;
 }
 
-.experience-description {
+.experience-description,
+.info-description {
     margin-top: 10px;
     line-height: 26px;
     color: #727272;
@@ -346,11 +349,88 @@ footer {
     color: #424242;
 }
 
+/*==============================
+         Contact style 
+================================= */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
 
+.contact .section-description {
+    width: 542px;
+}
 
+.our-details {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+}
 
+.our-info {
+    display: flex;
+    align-items: center;
+}
 
+.info-icon {
+    border-radius: 50%;
+    background-color: #FF900E;
+}
 
+.info-icon i {
+    color: #fff;
+    font-size: 50px;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info {
+    margin-left: 16px;
+
+}
+
+.right-contact {
+    padding: 50px;
+    box-shadow: 0 20px 75px rgb(0 0 0 / 10%);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.right-contact .contact-title {
+    border: none;
+    padding: 0;
+}
+
+.contact-form form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="number"],
+textarea {
+    border-radius: 8px;
+    border: 1px solid rgba(24, 24, 24, .2);
+    padding-left: 16px;
+    height: 3.5em;
+}
+
+textarea {
+    padding-top: 16px;
+    height: 6.5em;
+}
+
+.contact-form input[type="submit"] {
+    cursor: pointer;
+}
 
 
 
@@ -380,15 +460,21 @@ footer {
     }
 
     nav ul {
-        gap: 27px;
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 20px;
+        padding: 0;
     }
-
+    .banner{
+        padding-top: 0;
+    }
     .banner-title {
         font-size: 44px;
         line-height: 60px;
     }
 
-    .features {
+    .features,
+    .contact {
         flex-direction: column;
         padding: 0 20px;
     }
@@ -422,13 +508,16 @@ footer {
         color: #FFFFFF;
     }
 
-    .fact {
+    .fact ,.our-details{
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 35px;
     }
-        .facts .section-description ,.our-sponspors .section-description{
-            width: 100%;
-        }
+
+    .facts .section-description,
+    .our-sponspors .section-description ,.contact .section-description{
+        width: 100%;
+    }
+
     .fact-iteam:hover {
         transform: rotate(0deg) scale(1.1) translateY(10px);
         transition: .5s all ease;
@@ -441,6 +530,7 @@ footer {
         justify-content: center;
         grid-column-gap: 50px;
         grid-row-gap: 50px;
+        padding: 0 20px;
 
     }
 
