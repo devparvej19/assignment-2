@@ -1,0 +1,15 @@
+/*==============================
+         Common style 
+================================= */
+*{
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+header,main ,footer{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/*==============================
+         Header style 
+================================= */
+
