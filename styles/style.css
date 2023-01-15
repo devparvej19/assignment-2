@@ -442,18 +442,10 @@ textarea {
 
 
 /*==============================
-         Responsive style 
+         Responsive style 576 
 ================================= */
 
 @media only screen and (max-width: 576px) {
-
-    .banner-img img,
-    .banner-info,
-    .about-image img {
-        width: 100%;
-        height: 100%;
-    }
-
     nav {
         display: block;
         text-align: center;
@@ -465,35 +457,22 @@ textarea {
         gap: 20px;
         padding: 0;
     }
-    .banner{
+
+    .banner {
         padding-top: 0;
     }
+
     .banner-title {
         font-size: 44px;
         line-height: 60px;
-    }
-
-    .features,
-    .contact {
-        flex-direction: column;
-        padding: 0 20px;
     }
 
     .feature-image {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .about {
-        flex-direction: column;
-    }
-
     .right-about {
         text-align: center;
-    }
-
-    .about-image img {
-        width: 100%;
-        height: 100%;
     }
 
     .experience-btn {
@@ -508,14 +487,10 @@ textarea {
         color: #FFFFFF;
     }
 
-    .fact ,.our-details{
+    .fact,
+    .our-details {
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 35px;
-    }
-
-    .facts .section-description,
-    .our-sponspors .section-description ,.contact .section-description{
-        width: 100%;
     }
 
     .fact-iteam:hover {
@@ -524,9 +499,87 @@ textarea {
         z-index: 400;
     }
 
+    .experience-btn {
+        bottom: -80px;
+        padding: 35px;
+        font-size: 60px;
+        line-height: 50px;
+    }
+
+
+
+
+}
+
+/*=======================================
+        Responsive style 577 to 992
+================================= ========*/
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+
+    .fact,
+    .our-details {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 35px;
+    }
+
+    nav ul {
+        gap: 20px;
+        padding: 0;
+    }
+
+    .experience-btn {
+        bottom: -79px;
+        padding: 35px;
+        font-size: 60px;
+        line-height: 50px;
+        left: 120px;
+    }
+
+    .feature-image img {
+        width: 100%;
+    }
+        .facts .section-description,
+        .our-sponspors .section-description,
+        .contact .section-description {
+            width: 100%;
+        }
+}
+
+/*=======================================
+        Responsive style 993 to 1200
+================================= ========*/
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .fact,
+        .our-details {
+            grid-template-columns: repeat(2, 1fr);
+            grid-row-gap: 35px;
+        }
+                
+                
+}
+
+/*=======================================
+        Responsive style 1200
+=========================================*/
+
+@media only screen and (max-width: 1200px) {
+
+    .features,
+    .contact {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    
+
+    .about {
+        flex-direction: column;
+    }
+
     .sponspors {
         align-content: center;
-        grid-template-columns: repeat(3, 1fr);
         justify-content: center;
         grid-column-gap: 50px;
         grid-row-gap: 50px;
@@ -534,8 +587,37 @@ textarea {
 
     }
 
-    .sponspor-img {
-        width: 75%;
+}
+
+/*=======================================
+        Responsive style 1400
+=========================================*/
+@media only screen and (max-width: 1400px) {
+
+    .banner-img img,
+    .banner-info,
+    .about-image img {
+        width: 100%;
+        height: 100%;
     }
 
+    .sponspor-img {
+        width: 70%;
+    }
+        .header-section,
+        .about,
+        .facts {
+            padding: 0 20px;
+        }
+                
+
+}
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+    .sponspors {
+            grid-column-gap: 50px;
+        }
+                .contact .section-description {
+                    width: 80%;
+                }
+                                
 }
