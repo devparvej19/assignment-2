@@ -488,11 +488,10 @@ textarea {
         width: 100%;
     }
 
-    .fact,
-    .our-details {
-        grid-template-columns: repeat(2, 1fr);
-        grid-row-gap: 35px;
-    }
+        .sponspors {
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 50px;
+        }
 
 
 }
@@ -524,6 +523,10 @@ textarea {
     .contact .section-description {
         width: 100%;
     }
+        .sponspors {
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 50px;
+        }
 }
 
 /*=======================================
@@ -537,6 +540,7 @@ textarea {
         grid-template-columns: repeat(2, 1fr);
         grid-row-gap: 35px;
     }
+
 }
 
 /*=======================================
@@ -601,6 +605,8 @@ textarea {
     .facts {
         padding: 0 20px;
     }
+
+
 }
 
 @media only screen and (min-width: 1201px) and (max-width: 1400px) {
