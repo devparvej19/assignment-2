@@ -435,15 +435,10 @@ textarea {
 
 
 
-
-
-
-
-
-
 /*==============================
          Responsive style 576 
 ================================= */
+
 
 @media only screen and (max-width: 576px) {
     nav {
@@ -475,18 +470,6 @@ textarea {
         text-align: center;
     }
 
-    .experience-btn {
-        position: absolute;
-        left: 27px;
-        bottom: -95px;
-        padding: 45px;
-        font-weight: 700;
-        font-size: 65px;
-        line-height: 70px;
-        text-align: center;
-        color: #FFFFFF;
-    }
-
     .fact,
     .our-details {
         grid-template-columns: repeat(1, 1fr);
@@ -498,15 +481,6 @@ textarea {
         transition: .5s all ease;
         z-index: 400;
     }
-
-    .experience-btn {
-        bottom: -80px;
-        padding: 35px;
-        font-size: 60px;
-        line-height: 50px;
-    }
-
-
 
 
 }
@@ -527,14 +501,7 @@ textarea {
         gap: 20px;
         padding: 0;
     }
-
-    .experience-btn {
-        bottom: -79px;
-        padding: 35px;
-        font-size: 60px;
-        line-height: 50px;
-        left: 120px;
-    }
+        
 
     .feature-image img {
         width: 100%;
@@ -556,6 +523,7 @@ textarea {
             grid-template-columns: repeat(2, 1fr);
             grid-row-gap: 35px;
         }
+        
                 
                 
 }
@@ -586,6 +554,17 @@ textarea {
         padding: 0 20px;
 
     }
+        .experience-btn {
+            padding: 35px;
+            font-size: 60px;
+            line-height: 50px;
+            position: static;
+        }
+    
+        .experience-button {
+            margin-top: -110px;
+            text-align: center;
+        }
 
 }
 
