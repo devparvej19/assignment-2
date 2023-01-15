@@ -488,6 +488,12 @@ textarea {
         width: 100%;
     }
 
+    .fact,
+    .our-details {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 35px;
+    }
+
 
 }
 
@@ -531,9 +537,6 @@ textarea {
         grid-template-columns: repeat(2, 1fr);
         grid-row-gap: 35px;
     }
-
-
-
 }
 
 /*=======================================
@@ -598,8 +601,6 @@ textarea {
     .facts {
         padding: 0 20px;
     }
-
-
 }
 
 @media only screen and (min-width: 1201px) and (max-width: 1400px) {
