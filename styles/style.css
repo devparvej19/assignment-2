@@ -501,16 +501,17 @@ textarea {
         gap: 20px;
         padding: 0;
     }
-        
+
 
     .feature-image img {
         width: 100%;
     }
-        .facts .section-description,
-        .our-sponspors .section-description,
-        .contact .section-description {
-            width: 100%;
-        }
+
+    .facts .section-description,
+    .our-sponspors .section-description,
+    .contact .section-description {
+        width: 100%;
+    }
 }
 
 /*=======================================
@@ -518,14 +519,15 @@ textarea {
 ================================= ========*/
 
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
+
     .fact,
-        .our-details {
-            grid-template-columns: repeat(2, 1fr);
-            grid-row-gap: 35px;
-        }
-        
-                
-                
+    .our-details {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 35px;
+    }
+
+
+
 }
 
 /*=======================================
@@ -540,7 +542,7 @@ textarea {
         padding: 0 20px;
     }
 
-    
+
 
     .about {
         flex-direction: column;
@@ -554,17 +556,18 @@ textarea {
         padding: 0 20px;
 
     }
-        .experience-btn {
-            padding: 35px;
-            font-size: 60px;
-            line-height: 50px;
-            position: static;
-        }
-    
-        .experience-button {
-            margin-top: -110px;
-            text-align: center;
-        }
+
+    .experience-btn {
+        padding: 35px;
+        font-size: 60px;
+        line-height: 50px;
+        position: static;
+    }
+
+    .experience-button {
+        margin-top: -110px;
+        text-align: center;
+    }
 
 }
 
@@ -583,20 +586,23 @@ textarea {
     .sponspor-img {
         width: 70%;
     }
-        .header-section,
-        .about,
-        .facts {
-            padding: 0 20px;
-        }
-                
+
+    .header-section,
+    .about,
+    .facts {
+        padding: 0 20px;
+    }
+
 
 }
+
 @media only screen and (min-width: 1201px) and (max-width: 1400px) {
     .sponspors {
-            grid-column-gap: 50px;
-        }
-                .contact .section-description {
-                    width: 80%;
-                }
-                                
+        grid-column-gap: 50px;
+    }
+
+    .contact .section-description {
+        width: 80%;
+    }
+
 }
