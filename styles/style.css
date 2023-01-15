@@ -482,6 +482,12 @@ textarea {
         z-index: 400;
     }
 
+    .facts .section-description,
+    .our-sponspors .section-description,
+    .contact .section-description {
+        width: 100%;
+    }
+
 
 }
 
