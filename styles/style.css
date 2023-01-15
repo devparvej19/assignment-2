@@ -488,11 +488,14 @@ textarea {
         width: 100%;
     }
 
-        .sponspors {
-            grid-template-columns: repeat(3, 1fr);
-            grid-column-gap: 50px;
-        }
+    .sponspors {
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 50px;
+    }
 
+    .feature-image img {
+        width: 100%;
+    }
 
 }
 
@@ -523,10 +526,11 @@ textarea {
     .contact .section-description {
         width: 100%;
     }
-        .sponspors {
-            grid-template-columns: repeat(3, 1fr);
-            grid-column-gap: 50px;
-        }
+
+    .sponspors {
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 50px;
+    }
 }
 
 /*=======================================
